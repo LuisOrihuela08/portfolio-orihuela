@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!--MENÚ ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Luis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">REPOSITORIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INCIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/perfil.jpg" alt="Mi foto de perfil">
+            </div>
+            <h1>LUIS ORIHUELA</h1>
+            <h2>Ingeniero de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/LuisOrihuelaO"><i class="fa-brands fa-facebook-f"></i></a>
+                <!--<a href="#"><i class="fa-brands fa-x-twitter"></i></a>-->
+                <a href="https://www.linkedin.com/in/orihuela-luis/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/LuisOrihuela08"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Luis Orihuela!. </span>Actualmente soy estudiante de la carrera de Ingenieria de Sistemas
+                con experiencia en el desarrollo de aplicaciones web. Tengo conocimientos
+                de tecnologias en base de datos relacionales como MySQL, Oracle, PostgreSQL y SQLServer, y no
+                relacionales como MongoDB. Sobre el desarrollo backend, me especializo en Java y Spring Boot empleando
+                arquitecturas como Monoliticos y Microservicios. En cuanto al desarrollo frontend, utilizo las
+                herramientas como Angular, Bootstrap, Angular Material, HTML, CSS Y Javascript. Además, tengo
+                experiencia
+                aplicando metodologias ágiles como SCRUM. Mis metas es seguir ampliando mis conocimientos y habilidades
+                relacionadas al desarrollo y contribuir con ideas innovadoras a equipos de trabajo.</p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <!--
+                    <li><strong>Cumpleaños</strong>08-04-1992</li>
+                    <li><strong>Teléfono</strong>936500664</li>
+                    <li><strong>Website</strong>luis.com</li>
+                    -->
+                        <li><strong>Email</strong>orihuelao.luis@gmail.com</li>
+                        <li><strong>Dirección</strong>Lima, Perú</li>
+                        <li><strong>Cargo</strong><span>Freelance</span></li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Herramientas</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-brands fa-docker"></i>
+                            <span>DOCKER</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>GIT</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-brands fa-angular"></i>
+                            <span>ANGULAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="devicon-vscode-plain-wordmark"></i>
+                            <span>VSC</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="devicon-spring-original"></i>
+                            <span>SPRING</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="devicon-postman-plain"></i>
+                            <span>POSTMAN</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="devicon-datagrip-plain"></i>
+                            <span>DATAGRIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a download="Luis Orihuela Orozco - CV" href="cv/Luis Orihuela Orozco -  CV.pdf">Descargar CV</a> <i
+                    class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--SECCION SKILLS--->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span><i class="devicon-javascript-plain"></i> Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>57%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="devicon-html5-plain"></i> HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="devicon-java-plain"></i> JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="devicon-python-plain"></i> PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="devicon-azuresqldatabase-plain"></i> SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional skill-->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span><i class="fa-solid fa-comments"></i> Comunicación </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-solid fa-handshake"></i> Trabajao en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-solid fa-lightbulb"></i> Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-solid fa-heart"></i> Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-solid fa-clipboard-list"></i> Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">Universidad Peruana Unión</span>
+                        <span class="fecha">2022 - acutal</span>
+                        <p>Ingeniero de Sistemas apasionado por la tecnología y con un enfoque en el desarrollo de
+                            soluciones innovadoras. Sólidos conocimientos en desarrollo web y backend, así como
+                            habilidades de comunicación y trabajo en equipo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés</h4>
+                        <span class="casa">Universidad Peruana Unión - Centro de Idiomas</span>
+                        <span class="fecha">2023 - acutal</span>
+                        <p>Estudiante activo en el Centro de Idiomas de la Universidad Peruana Unión, con el compromiso
+                            del aprendizaje continuo del inglés para expandir mis horizontes profesionales y personales.
+                            El dominio del inglés me permitirá acceder a nuevas oportunidades laborales y mantenerme
+                            actualizado en las últimas tendencias tecnológicas a nivel global.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad gaa</span>
+                        <span class="fecha">2022 - acutal</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolorem illo dolores iure, dicta repellendus ea ipsa, eius, temporibus vel iusto saepe odit quam porro dignissimos autem. Mollitia, quos est.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="col derecha">
+                    <h3>Proyectos</h3>
+                    <div class="item der">
+                        <h4>Backend developer</h4>
+                        <span class="casa">Implementación de Backend para Sistema Web de UPeU FabLab</span>
+                        <span class="fecha">2024</span>
+                        <p>Desarrollé el backend del sistema utilizando Java y arquitectura de microservicios,
+                            asegurando escalabilidad y modularidad. A través del sistemas, el administrador tenia la
+                            opción de gestionar el inventario de materiales e insumos del laboratorio, sino también los
+                            servicios que brinda el laboratorio fablab como préstamos y pedidos. Además, los usuarios
+                            (clientes) podian registrar tanto un pedido como préstamo de materiales que brinda el
+                            laboratorio FabLab. El backend era consumido tanto por el sistema web y la aplicación móvil,
+                            obteniendo asi una comunicación entre ambas plataformas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend developer</h4>
+                        <span class="casa">Sistema de Gestión de Registros y Notificaciones vía Correo
+                            Electrónico</span>
+                        <span class="fecha">2024</span>
+                        <p>Desarrollo de un servicio backend en Spring Boot que permite gestionar registros de nuevos
+                            usuarios en una landing page. El sistema envía notificaciones automáticas por correo
+                            electrónico al administrador, incluyendo los datos de los usuarios registrados (nombre,
+                            apellidos, correo y número telefónico) para facilitar el control de registros y solicitudes
+                            de información. La funcionalidad de envío de correos fue implementada utilizando
+                            JavaMailSender con credenciales configuradas en Google Apps, además el backend se encuentra
+                            desplegado en Railway, asegurando su disponibilidad para el consumo por parte del frontend.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend developer</h4>
+                        <span class="casa">Diseño e Implementación de Backend para Landing Page con Publicaciones en
+                            Redes Sociales</span>
+                        <span class="fecha">2024</span>
+                        <p>Diseñé y desarrollé el servicio de backend para una landing page utilizando Java 17 y Spring
+                            Boot. Implementé integración con la API Graph de Meta para publicar automáticamente las
+                            publicaciones creadas en la landing page en Facebook e Instagram, optimizando la presencia
+                            en redes sociales y agilizando el proceso de publicación en las distintas plataformas.
+                            Además, añadí soporte para alojamiento de imágenes en la nube utilizando Cloudinary,
+                            permitiendo generar URLs públicas necesarias para compartir contenido multimedia en Facebook
+                            e Instagram. Y por último, utilicé la dependencia Thumbnailator para redimensionar imágenes
+                            de acuerdo con los requisitos específicos de Instagram, asegurando compatibilidad y calidad
+                            en las publicaciones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION REPOSITORIO/PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REPOSITORIOS</h2>
+            <div class="galeria">
+                <a href="https://github.com/ProyectoFabLab-Ciclo-VI/ProyectoFabLab-Backend.git">
+                    <div class="proyecto">
+                        <img src="imagenes/javaspring.png" alt="">
+                        <div class="overlay">
+                            <h3>Implementación de API para aplicación web de UPeU FabLab</h3>
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/LuisOrihuela08/control-usuariosAPI.git">
+                    <div class="proyecto">
+                        <img src="imagenes/javaspring.png" alt="">
+                        <div class="overlay">
+                            <h3>Sistema de Gestión de Registros y Notificaciones vía correo electrónico</h3>
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/LuisOrihuela08/testapigraph-backend.git">
+                    <div class="proyecto">
+                        <img src="imagenes/javaspring.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño e Implementación de Backend para Landing Page con Publicaciones en Redes Sociales
+                            </h3>
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--
+                <div class="proyecto">
+                    <img src="imagenes/javaspring.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/javaspring.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/javaspring.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <form id="form">
+                        <input name="name" type="text" placeholder="Tú Nombre" required>
+                        <input name="phone" type="number" placeholder="Número Telefónico" required>
+                        <input name="email" type="text" placeholder="Email" required>
+                        <input name="theme" type="text" placeholder="Tema" required>
+                        <textarea name="message" name="" id="" cols="30" rows="10" placeholder="Mensaje"
+                            required></textarea>
+                        <button type="submit" id="button" value="Enviar Mensaje">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                    <!--Estos scripts son para que Emailjs permita enviar correos electronicos-->
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                    <script type="text/javascript">
+                        emailjs.init('Ao4aOxLKGRJVSnl1v')
+                    </script>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="imagenes/ubicacion2.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i> Lima, Perú
+                            </li>
+                            <!--
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamame: 999888555
+                            </li>
+                            -->
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>orihuelao.luis@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/LuisOrihuelaO"><i class="fa-brands fa-facebook-f"></i></a>
+            <!--<a href="#"><i class="fa-brands fa-x-twitter"></i></a>-->
+            <a href="https://www.linkedin.com/in/orihuela-luis/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/LuisOrihuela08"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
