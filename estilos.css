@@ -724,12 +724,12 @@ footer .arriba{
 }
 @media screen and (max-width:430px){
     .inicio{
-        height: auto;
-        padding: 30px;
+       height: 100%;
+       margin-top: 17%;
+       padding: 10%
     }
     .inicio .contenido-banner{
         max-width: 325px;
-        margin-top: 25%;
     }
     .sobremi .fila .col .contenedor-intereses{
         display: flex;
@@ -738,28 +738,26 @@ footer .arriba{
 }
 @media screen and (max-width:360px){
     .inicio{
-        height: 80vh;
-        padding: 50px;
-    }
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+     }
     .inicio .contenido-banner{
         max-width: 300px;
-        margin-top: 20%;
     }
     .sobremi .fila .col .contenedor-intereses{
         display: flex;
         justify-content: center;
-        }
-        
-    
+        }  
 }
 @media screen and (max-width:390px){
     .inicio{
-        height: 80vh;
-        padding: 50px;
-    }
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+     }
     .inicio .contenido-banner{
         max-width: 300px;
-        margin-top: 30%;
     } 
     .sobremi .fila .col .contenedor-intereses{
         display: flex;
@@ -768,12 +766,12 @@ footer .arriba{
 }
 @media screen and (max-width:375px){
     .inicio{
-        height: 100vh;
-        padding: 50px;
-    }
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+     }
     .inicio .contenido-banner{
         max-width: 300px;
-        margin-top: 28%;
     } 
     .sobremi .fila .col .contenedor-intereses{
         display: flex;
