@@ -731,6 +731,10 @@ footer .arriba{
         max-width: 325px;
         margin-top: 25%;
     }
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        justify-content: center;
+        }
 }
 @media screen and (max-width:360px){
     .inicio{
@@ -741,6 +745,10 @@ footer .arriba{
         max-width: 300px;
         margin-top: 20%;
     }
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        justify-content: center;
+        }
         
     
 }
@@ -753,6 +761,10 @@ footer .arriba{
         max-width: 300px;
         margin-top: 30%;
     } 
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        justify-content: center;
+        }
 }
 @media screen and (max-width:375px){
     .inicio{
@@ -763,4 +775,8 @@ footer .arriba{
         max-width: 300px;
         margin-top: 28%;
     } 
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        justify-content: center;
+        }
 }
