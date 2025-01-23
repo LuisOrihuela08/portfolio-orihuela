@@ -724,7 +724,8 @@ footer .arriba{
 }
 @media screen and (max-width:430px){
     .inicio{
-        height: 75vh;
+        height: auto;
+        padding: 30px;
     }
     .inicio .contenido-banner{
         max-width: 325px;
@@ -734,10 +735,11 @@ footer .arriba{
 @media screen and (max-width:360px){
     .inicio{
         height: 80vh;
+        padding: 50px;
     }
     .inicio .contenido-banner{
         max-width: 300px;
-        margin-top: 40%;
+        margin-top: 20%;
     }
         
     
@@ -745,6 +747,7 @@ footer .arriba{
 @media screen and (max-width:390px){
     .inicio{
         height: 80vh;
+        padding: 50px;
     }
     .inicio .contenido-banner{
         max-width: 300px;
@@ -754,6 +757,7 @@ footer .arriba{
 @media screen and (max-width:375px){
     .inicio{
         height: 100vh;
+        padding: 50px;
     }
     .inicio .contenido-banner{
         max-width: 300px;
