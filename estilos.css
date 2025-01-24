@@ -245,6 +245,7 @@ html{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
 }
 .skills .skill > span{
     font-weight: bold;
@@ -278,6 +279,45 @@ html{
     right: -15px;
     font-size: 14px;
 }
+/*Estos estilos son para los skills lenguajes*/
+.skills .col .contenedor-skills{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+
+}
+.skills .col .contenedor-skills .skill{
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);/* desplazamiento x, desplazamiento y, desenfoque, color */
+    width: 130px;
+    height: 130px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.skills .col .contenedor-skills .skill:hover{
+    background-color: #1CB698;
+    animation: vibrate 0.3s ease-in-out;
+}
+.skills .col .contenedor-skills .skill i{
+    font-size: 55px;
+    padding: 8px;
+}
+.skills .col .contenedor-skills .skill h4{
+    font-size: 12px;
+}
+ /* Definir la animación de vibración */
+ @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+
 /*Estas clases se agregaran dinamicamente mendiante javascript*/
 .skills .skill .javascript{
     width: 0%;
@@ -285,7 +325,7 @@ html{
 }
 @keyframes javascript{
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 55%;}
 }
 .skills .skill .htmlcss{
     width: 0%;
@@ -301,7 +341,7 @@ html{
 }
 @keyframes java{
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
 .skills .skill .python{
     width: 0%;
@@ -309,7 +349,7 @@ html{
 }
 @keyframes python{
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 30%;}
 }
 .skills .skill .sql{
     width: 0%;
@@ -317,7 +357,7 @@ html{
 }
 @keyframes sql{
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 70%;}
 }
 .skills .skill .comunicacion{
     width: 0%;
@@ -499,7 +539,7 @@ html{
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
-    height: 200px;
+    height: 180px;
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
