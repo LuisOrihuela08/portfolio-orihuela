@@ -59,3 +59,25 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
+
+//Esto es para mostrar los videos de la seccion de proyectos
+function abrirModal(el) {
+    const videoUrl = el.getAttribute("data-video");
+    const iframe = document.getElementById("youtubeVideo");
+    iframe.src = videoUrl;
+    document.getElementById("modalVideo").style.display = "flex";
+  }
+
+  function cerrarModal() {
+    const modal = document.getElementById("modalVideo");
+    const iframe = document.getElementById("youtubeVideo");
+    modal.style.display = "none";
+    iframe.src = ""; // Detiene el video
+  }
+  // Cerrar modal al hacer clic fuera del contenido
+  window.onclick = function(event) {
+    const modal = document.getElementById("modalVideo");
+    if (event.target === modal) {
+      cerrarModal();
+    }
+  }
