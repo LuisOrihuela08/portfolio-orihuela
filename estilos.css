@@ -70,6 +70,8 @@ html{
     align-items: center;
 
     min-height: 65vh;
+    background-position: center;
+    justify-content: center;
     box-sizing: border-box;
 }
 .inicio .contenido-banner{
