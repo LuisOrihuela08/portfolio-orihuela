@@ -68,6 +68,9 @@ html{
     color: #fff;
     display: flex;
     align-items: center;
+
+    min-height: 65vh;
+    box-sizing: border-box;
 }
 .inicio .contenido-banner{
     padding: 20px;
