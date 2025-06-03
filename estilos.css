@@ -69,7 +69,7 @@ html{
     display: flex;
     align-items: center;
 
-    min-height: 65vh;
+    padding-top: 80px;
     background-position: center;
     justify-content: center;
     box-sizing: border-box;
