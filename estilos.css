@@ -70,8 +70,12 @@ html{
     display: flex;
     align-items: center;
 
+    min-height: 100vh;
     background-position: center;
     justify-content: center;
+    position: relative;
+    margin-top: 70px; /* Para evitar que el contenido se superponga al header */
+    
 }
 .inicio .contenido-banner{
     padding: 20px;
