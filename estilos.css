@@ -173,9 +173,13 @@ html{
     font-weight: bold;
     border-radius: 5px;
 }
+.sobremi .fila .col .herramientas{
+    text-align: center;
+}
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .sobremi .fila .col .contenedor-intereses .intereses{
     width: 100px;
@@ -512,6 +516,10 @@ html{
     float: left;
     position: relative;
     bottom: 4px;
+}
+
+.curriculum .fila .herramientas{
+    color: #1CB698;
 }
 /*SECCION PORTFOLIO*/
 .portfolio{
