@@ -39,26 +39,53 @@ window.onscroll = function () {
 }
 
 //Esto es para mandar correo a traves del formulario con Emailjs
+// Esto es para mandar correo a través del formulario con EmailJS
 const btn = document.getElementById('button');
+const form = document.getElementById('form');
 
-document.getElementById('form')
-    .addEventListener('submit', function (event) {
-        event.preventDefault();
+let isSending = false;          // evita múltiples envíos simultáneos
+let lastSendTime = 0;           // timestamp del último envío
+const COOLDOWN_MS = 10000;       // 1 segundo (ajusta si quieres más)
 
-        btn.value = 'Enviando...';
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        const serviceID = 'default_service';
-        const templateID = 'template_iaom2eo';
+    const now = Date.now();
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.value = 'Enviar Mensaje';
-                alert('Mensaje enviado correctamente!');
-            }, (err) => {
-                btn.value = 'Enviar Mensaje';
-                alert(JSON.stringify(err));
-            });
-    });
+    // Verifica cooldown (1 correo por segundo)
+    if (now - lastSendTime < COOLDOWN_MS) {
+        alert('Estás enviando mensajes muy rápido. Inténtalo de nuevo en un momento.');
+        return;
+    }
+
+    // Evita doble envío mientras se está procesando
+    if (isSending) {
+        return;
+    }
+
+    isSending = true;
+    lastSendTime = now;
+
+    btn.value = 'Enviando...';
+    btn.disabled = true;
+
+    const serviceID = 'default_service';
+    const templateID = 'template_iaom2eo';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Enviar Mensaje';
+            alert('Mensaje enviado correctamente!');
+        }, (err) => {
+            btn.value = 'Enviar Mensaje';
+            alert(JSON.stringify(err));
+        })
+        .finally(() => {
+            isSending = false;
+            btn.disabled = false;
+        });
+});
+
 
 //Esto es para mostrar los videos de la seccion de proyectos
 function abrirModal(el) {
