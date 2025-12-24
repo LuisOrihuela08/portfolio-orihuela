@@ -521,7 +521,7 @@ html{
 .curriculum .fila .herramientas{
     color: #1CB698;
 }
-/*SECCION PORTFOLIO*/
+/*SECCION PORTFOLIO/PROYECTOS*/
 .portfolio{
     background-color: #252a2e;
     color: #fff;
@@ -544,6 +544,10 @@ html{
     margin-top: 15px;
     align-items: center;
 
+    border: 1px solid #3a3f44;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .portfolio .galeria .content{
     justify-items: center;
