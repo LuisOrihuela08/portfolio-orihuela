@@ -57,16 +57,24 @@
         <div class="contenido-seccion">
             <h2>Sobre mí</h2>
             <p><span>Hola, soy Luis Orihuela!. </span>Soy estudiante de Ingeniería de Sistemas con
-                habilidades en el desarrollo de aplicaciones, tengo conocimientos en base de datos relacionales como <strong>MySQL, Oracle, PostgreSQL</strong> y <strong>SQL Server</strong>, y no
-                relacionales como <strong>MongoDB</strong>. Para el desarrollo backend, me especializo en <strong>Java</strong> y <strong>Spring Boot</strong> donde
+                habilidades en el desarrollo de aplicaciones, tengo conocimientos en base de datos relacionales como
+                <strong>MySQL, Oracle, PostgreSQL</strong> y <strong>SQL Server</strong>, y no
+                relacionales como <strong>MongoDB</strong>. Para el desarrollo backend, me especializo en
+                <strong>Java</strong> y <strong>Spring Boot</strong> donde
                 he trabajado en proyectos utilizando arquitecturas tanto Microservicios y Monolíticos. Para el
-                desarrollo frontend, tengo experiencia con el framework <strong>Angular</strong>, complementandolo con <strong>CSS, HTML </strong>y <strong>JavaScript</strong> para la maquetación y el diseño de interfaces.
-                 Además, cuento con experiencia en despliegue en la nube en plataformas como <strong>AWS, Render, Cloudfare Pages, Vercel</strong> y <strong>Github Pages</strong>, asi
-                como la virtualización de servidores, donde utilicé <strong>Docker</strong> para gestionar contenedores y desplegar
-                aplicaciones. Y para complementar, tengo experiencia aplicando metodologías ágiles como <strong>SCRUM</strong> . Me destaco por ser
+                desarrollo frontend, tengo experiencia con el framework <strong>Angular</strong>, complementandolo con
+                <strong>CSS, HTML </strong>y <strong>JavaScript</strong> para la maquetación y el diseño de interfaces.
+                Además, cuento con experiencia en despliegue en la nube en plataformas como <strong>AWS, Render,
+                    Cloudfare Pages, Vercel</strong> y <strong>Github Pages</strong>, asi
+                como la virtualización de servidores, donde utilicé <strong>Docker</strong> para gestionar contenedores
+                y desplegar
+                aplicaciones. Y para complementar, tengo experiencia aplicando metodologías ágiles como
+                <strong>SCRUM</strong> . Me destaco por ser
                 creativo, dinámico y orientado a resultados, con sólidas habilidades para trabajar en equipo. Estoy
-                enfocado en seguir creciendo en el ámbito de la programación, ya que mi objetivo es seguir desarrollando mis
-                habilidades técnicas y contribuir a equipos con ideas innovadoras.</p>
+                enfocado en seguir creciendo en el ámbito de la programación, ya que mi objetivo es seguir desarrollando
+                mis
+                habilidades técnicas y contribuir a equipos con ideas innovadoras.
+            </p>
             <div class="fila">
                 <!--datos personales-->
                 <div class="col">
@@ -392,6 +400,157 @@
             </div>
             -->
             <div class="galeria">
+                <a href="https://github.com/LuisOrihuela08/secret-key-project-frontend.git">
+                    <div class="proyecto">
+                        <img src="imagenes/key-secret-app.png" alt="Secret Key App">
+                        <div class="overlay">
+                            <h3>Diseño y desarrollo de Aplicación web "Secret Key v1"
+                            </h3>
+                            <p>Fullstack</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="content">
+                    <p>Diseñé y desarrollé <strong>"Secret Key v1"</strong>, una aplicación web para gestionar
+                        credenciales de múltiples plataformas de forma segura y centralizada. Incluye búsqueda por
+                        nombre, paginación y exportación de reportes en PDF y Excel para facilitar el control y la
+                        auditoría de la información. El proyecto está listo para instalarse con Docker mediante un
+                        docker-compose.yml.
+                        Y para una mayor personalización, revisar los repositorios del proyecto.</p>
+                    </p>
+                    <br>
+                    <p class="herramientas"><strong>Herramientas Utilizadas: </strong>Java 17, Spring Boot, Apache POI,
+                        OpenPDF, Open API (Swagger), Docker, MongoDB, Datagrip, React.
+                    </p>
+                    <div class="botones-proyecto">
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/gWSVlmfoO3w"><i class="fa-solid fa-video"></i> Ver
+                            demo<span class="overlay"></span>
+                        </button>
+                        <button onclick="abrirModalDocker()">
+                            <i class="fa-solid fa-gear"></i> Instalar<span class="overlay"></span>
+                        </button>
+                        <button><a href="https://github.com/LuisOrihuela08/secret-key-project-frontend.git"><i
+                                    class="fa-brands fa-github"></i> Frontend</a><span class="overlay"></span>
+                        </button>
+                        <button><a href="https://github.com/LuisOrihuela08/secret-key-project.git"><i
+                                    class="fa-brands fa-github"></i> Backend</a><span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div id="modalVideo" class="modal">
+                        <div class="modal-contenido">
+                            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                            <div class="video-wrapper">
+                                <iframe id="youtubeVideo" src="" title="Demo del proyecto" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Docker Compose -->
+                    <div id="modalDocker" class="modal">
+                        <div class="modal-contenido">
+                            <div class="modal-header">
+                                <h2><i class="fa-brands fa-docker"></i> Instalación con Docker</h2>
+                                <span class="cerrar" onclick="cerrarModalDocker()">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="code-container">
+                                    <div class="code-header">
+                                        <span class="code-title">docker-compose.yml</span>
+                                        <button class="copy-button" onclick="copiarComando()">
+                                            <i class="fa-solid fa-copy"></i>
+                                            <span id="copyComand">Copiar</span>
+                                        </button>
+                                    </div>
+                                    <div class="code-content">
+                                        <pre id="comandDocker">
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: secretkey-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+      MONGO_INITDB_DATABASE: secretkey
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - secretkey-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/secretkey --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  secret-key-backend:
+    image: luisorihuela92/secret-key-backend:latest
+    container_name: secretkey-app-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:mongo@mongodb:27017/secretkey?authSource=admin
+      JWT_SECRET: DHoEyF2VTNrYGafkeIP9LipcGfVkOt8SeBC9SjViYR8=
+      JWT_EXPIRATION: 86400000
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - secretkey-network
+
+  secret-key-frontend:
+    image: luisorihuela92/secret-key-frontend:latest
+    container_name: secretkey-app-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://localhost:8080
+    depends_on:
+      - secret-key-backend
+    networks:
+      - secretkey-network
+
+volumes:
+  mongodb_data:
+    name: secretkey-mongodb-data
+  mongodb_config:
+    name: secretkey-mongodb-config
+
+networks:
+  secretkey-network:
+</pre>
+                                    </div>
+                                </div>
+                                <div
+                                    style="margin-top: 20px; padding: 15px; background: #2d2d2d; border-radius: 8px; color: #e0e0e0;">
+                                    <p style="margin-bottom: 10px;"><strong style="color: #1CB698;">📋
+                                            Instrucciones:</strong></p>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Copia el contenido del archivo docker-compose.yml</li>
+                                        <li>Créalo en tu directorio de proyecto</li>
+                                        <li>Ejecuta: <code
+                                                style="background: #1a1a1a; padding: 2px 8px; border-radius: 3px; color: #1CB698;">docker-compose up -d</code>
+                                        </li>
+                                        <li>Accede a la aplicación en: <code
+                                                style="background: #1a1a1a; padding: 2px 8px; border-radius: 3px; color: #1CB698;">http://localhost:3000</code>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria">
                 <a href="https://github.com/LuisOrihuela08/sistema-club-frontend.git">
                     <div class="proyecto">
                         <img src="imagenes/sistema-club.png" alt="">
@@ -414,8 +573,9 @@
                         SweetAlert 2, Font Awesome, Google Fonts.
                     </p>
                     <div class="botones-proyecto">
-                        <button onclick="abrirModal(this)" data-video="https://www.youtube.com/embed/rsE6GWqSlZM"><i
-                                class="fa-solid fa-video"></i> Ver demo<span class="overlay"></span>
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/rsE6GWqSlZM"><i class="fa-solid fa-video"></i> Ver
+                            demo<span class="overlay"></span>
                         </button>
                         <button><a href="https://github.com/LuisOrihuela08/sistema-club-frontend.git"><i
                                     class="fa-brands fa-github"></i> Frontend</a><span class="overlay"></span>
@@ -462,8 +622,8 @@
                         OpenPDF, Swagger, JUnit5, Mockito, Apache POI, Angular 18
                     </p>
                     <div class="botones-proyecto">
-                        <button onclick="abrirModal(this)" data-video="https://www.youtube.com/embed/KQQjPAndTuI"><i
-                                class="fa-solid fa-video"></i>
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/KQQjPAndTuI"><i class="fa-solid fa-video"></i>
                             Ver demo</a><span class="overlay"></span></button>
                         <button><a href="https://github.com/LuisOrihuela08/control-ventas-backend.git"><i
                                     class="fa-brands fa-github"></i> Backend</a><span class="overlay"></span></button>
@@ -513,10 +673,11 @@
                         <button><a href="https://www.youtube.com/embed/aAe5Ums6obg"><i class="fa-solid fa-video"></i>
                                 Ver demo</a><span class="overlay"></span></button>
                             -->
-                        <button onclick="abrirModal(this)" data-video="https://www.youtube.com/embed/aAe5Ums6obg"><i
-                                class="fa-solid fa-video"></i> Ver demo<span class="overlay"></span></button>
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/aAe5Ums6obg"><i class="fa-solid fa-video"></i> Ver
+                            demo<span class="overlay"></span></button>
                         <button><a href="https://github.com/LuisOrihuela08/control-usuariosAPI"><i
-                                    class="fa-brands fa-github"></i>Repositorio</a><span
+                                    class="fa-brands fa-github"></i> Repositorio</a><span
                                 class="overlay"></span></button>
                     </div>
                     <!-- Modal -->
@@ -557,7 +718,7 @@
                         Cloudinary, Thumbnailator
                     </p>
                     <div class="botones-proyecto">
-                        <button onclick="abrirModal(this)"
+                        <button onclick="abrirModalvideo(this)"
                             data-video="https://www.youtube.com/embed/DnAqsI-rUxs?t=8s"><i
                                 class="fa-solid fa-video"></i>
                             Ver demo</a><span class="overlay"></span></button>
@@ -604,8 +765,9 @@
                         Security, JWT, PostgresSQL, Cloudinary, Angular 18, Tailwind CSS, Datagrip, Docker
                     </p>
                     <div class="botones-proyecto">
-                        <button onclick="abrirModal(this)" data-video="https://www.youtube.com/embed/jdmdulKqiBs"><i
-                                class="fa-solid fa-video"></i> Ver demo<span class="overlay"></span>
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/jdmdulKqiBs"><i class="fa-solid fa-video"></i> Ver
+                            demo<span class="overlay"></span>
                         </button>
                         <button><a href="https://github.com/LuisOrihuela08/sistema-inventario-zapatillas-frontend"><i
                                     class="fa-brands fa-github"></i> Frontend</a><span class="overlay"></span>
@@ -652,8 +814,8 @@
                         XLSX, GitHub Pages
                     </p>
                     <div class="botones-proyecto">
-                        <button onclick="abrirModal(this)" data-video="https://www.youtube.com/embed/26FI2VHYMls"><i
-                                class="fa-solid fa-video"></i>
+                        <button onclick="abrirModalvideo(this)"
+                            data-video="https://www.youtube.com/embed/26FI2VHYMls"><i class="fa-solid fa-video"></i>
                             Ver demo<span class="overlay"></span>
                         </button>
                         <button><a href="https://luisorihuela08.github.io/anotador-productos/">

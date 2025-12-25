@@ -38,14 +38,13 @@ window.onscroll = function () {
     efectoHabilidades();
 }
 
-//Esto es para mandar correo a traves del formulario con Emailjs
-// Esto es para mandar correo a través del formulario con EmailJS
+//Codigo para el envio de correo
 const btn = document.getElementById('button');
 const form = document.getElementById('form');
 
 let isSending = false;          // evita múltiples envíos simultáneos
 let lastSendTime = 0;           // timestamp del último envío
-const COOLDOWN_MS = 10000;       // 1 segundo (ajusta si quieres más)
+const COOLDOWN_MS = 10000;       // tiempo de espera entre envíos (10 segundos)
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -88,7 +87,7 @@ form.addEventListener('submit', function (event) {
 
 
 //Esto es para mostrar los videos de la seccion de proyectos
-function abrirModal(el) {
+function abrirModalvideo(el) {
     const videoUrl = el.getAttribute("data-video");
     const iframe = document.getElementById("youtubeVideo");
     iframe.src = videoUrl;
@@ -101,10 +100,55 @@ function abrirModal(el) {
     modal.style.display = "none";
     iframe.src = ""; // Detiene el video
   }
-  // Cerrar modal al hacer clic fuera del contenido
+  // Cerrar los modales al hacer clic fuera del contenido
   window.onclick = function(event) {
     const modal = document.getElementById("modalVideo");
+    const modalDocker = document.getElementById("modalDocker");
+
     if (event.target === modal) {
       cerrarModal();
     }
+
+    if(event.target === modalDocker){
+        cerrarModalDocker();
+    }
+  }
+
+  //Esto es para mostrar un modal con instrucciones de instalacion
+  function abrirModalDocker(){
+    const modalDocker = document.getElementById("modalDocker");
+    modalDocker.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    
+  }
+
+  function cerrarModalDocker(){
+    const modalDocker = document.getElementById("modalDocker");
+    modalDocker.style.display = "none";
+    document.body.style.overflow = "auto";
+
+    //Resetear el boton de copiar
+    const copyButton = document.querySelector(".copy-button");
+    const copyComand = document.getElementById("copyComand");
+    copyButton.classList.remove("copied");
+    copyComand.textContent ="Copiar";
+  }
+
+  function copiarComando(){
+    const comand = document.getElementById("comandDocker").textContent;
+    const copyButton = document.querySelector(".copy-button");
+    const copyComand = document.getElementById("copyComand");
+
+    navigator.clipboard.writeText(comand).then(() => {
+        copyButton.classList.add("copied");
+        copyButton.textContent = "¡Copiado!";
+
+        setTimeout(() => {
+            copyButton.classList.remove("copied");
+            copyComand.textContent ="Copiar";
+        }, 5000);
+    }).catch(err => {
+        console.error('Error al copiar el comando: ', err);
+        alert('Error al copiar el comando. Por favor, inténtalo de nuevo.');
+    });
   }

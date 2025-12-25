@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-*{
-box-sizing: border-box;
-font-family: 'Work Sans';
-margin: 0;
-padding: 0;
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.contenedor-header{
+.contenedor-header {
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -21,7 +21,7 @@ html{
     z-index: 99;
 }
 
-.contenedor-header header{
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -29,17 +29,20 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+
+.contenedor-header header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
     color: #1CB698;
     text-decoration: none;
 }
-.contenedor-header header ul{
+
+.contenedor-header header ul {
     display: flex;
-    list-style: none; 
+    list-style: none;
 }
-.contenedor-header header nav ul li a{
+
+.contenedor-header header nav ul li a {
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -48,10 +51,11 @@ html{
     text-decoration: none;
 }
 
-.contenedor-header header nav ul li a:hover{
+.contenedor-header header nav ul li a:hover {
     color: #1CB698;
 }
-.nav-responsive{
+
+.nav-responsive {
     background-color: #1CB698;
     color: #fff;
     padding: 5px 10px;
@@ -59,10 +63,11 @@ html{
     cursor: pointer;
     display: none;
 }
+
 /*Estilos para INICIO*/
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(imagenes/fondo.png);
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(imagenes/fondo.png);
     background-size: cover;
     /*height: 65vh;*/
     height: 100vh;
@@ -74,10 +79,12 @@ html{
     background-position: center;
     justify-content: center;
     position: relative;
-    margin-top: 70px; /* Para evitar que el contenido se superponga al header */
-    
+    margin-top: 70px;
+    /* Para evitar que el contenido se superponga al header */
+
 }
-.inicio .contenido-banner{
+
+.inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -85,7 +92,8 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+
+.inicio .contenido-banner img {
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
@@ -93,16 +101,19 @@ html{
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+
+.inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
+
+.inicio .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+
+.inicio .contenido-banner .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -116,72 +127,88 @@ html{
     transition: .3s;
 }
 
-.inicio .contenido-banner .redes a:hover{
+.inicio .contenido-banner .redes a:hover {
     background-color: #1CB698;
 }
+
 /*Estilos para SOBRE MI*/
-.sobremi{
+.sobremi {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+
+.sobremi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+
+.sobremi h2 {
     font-size: 48px;
-    font-family:'Righteous';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.sobremi .contenido-seccion p{
+
+.sobremi .contenido-seccion p {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
-    text-align: justify; /*Esto permite justificar el texto y se vea orientado a la izquierda o derecha*/
+    text-align: justify;
+    /*Esto permite justificar el texto y se vea orientado a la izquierda o derecha*/
 }
-.sobremi .contenido-seccion p span{
+
+.sobremi .contenido-seccion p span {
     color: #1CB698;
     font-weight: bold;
 }
-.sobremi .fila{
+
+.sobremi .fila {
     display: flex;
 }
-.sobremi .fila .col{
+
+.sobremi .fila .col {
     width: 50%;
 }
-.sobremi .fila .col h3{
+
+.sobremi .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+
+.sobremi .fila .col ul {
     list-style: none;
 }
-.sobremi .fila .col ul li{
+
+.sobremi .fila .col ul li {
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+
+.sobremi .fila .col ul li strong {
     display: inline-block;
     color: #1CB698;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+
+.sobremi .fila .col ul li span {
     background-color: #1CB698;
     padding: 6px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .herramientas{
+
+.sobremi .fila .col .herramientas {
     text-align: center;
 }
-.sobremi .fila .col .contenedor-intereses{
+
+.sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.sobremi .fila .col .contenedor-intereses .intereses{
+
+.sobremi .fila .col .contenedor-intereses .intereses {
     width: 100px;
     height: 100px;
     background-color: #252a2e;
@@ -193,14 +220,17 @@ html{
     justify-content: center;
     transition: .3s;
 }
-.sobremi .fila .col .contenedor-intereses .intereses:hover{
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover {
     background-color: #1CB698;
 }
-.sobremi .fila .col .contenedor-intereses .intereses i{
+
+.sobremi .fila .col .contenedor-intereses .intereses i {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+
+.sobremi button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -213,11 +243,14 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button a{ /*Esto lo agregue para estilar el link dentro del boton para que me permita visualizar el cv*/
+
+.sobremi button a {
+    /*Esto lo agregue para estilar el link dentro del boton para que me permita visualizar el cv*/
     color: #fff;
     text-decoration: none;
 }
-.sobremi button .overlay{
+
+.sobremi button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -227,51 +260,61 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+
+.sobremi button:hover .overlay {
     width: 100%;
 }
+
 /*SECCION SKILLS*/
-.skills{
+.skills {
     background-color: #252a2e;
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+
+.skills .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.skills h2{
+
+.skills h2 {
     font-size: 48px;
-    font-family:'Righteous';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.skills .fila{
+
+.skills .fila {
     display: flex;
 }
-.skills .fila .col{
+
+.skills .fila .col {
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+
+.skills .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
     text-align: center;
 }
-.skills .skill > span{
+
+.skills .skill>span {
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
+
+.skills .skill .barra-skill {
     height: 8px;
     width: 80%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
-.skills .skill .progreso{
+
+.skills .skill .progreso {
     background-color: #1CB698;
     position: absolute;
     top: 0;
@@ -279,7 +322,8 @@ html{
     height: 8px;
     width: 8px;
 }
-.skills .skill .barra-skill span{
+
+.skills .skill .barra-skill span {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -291,16 +335,19 @@ html{
     right: -15px;
     font-size: 14px;
 }
+
 /*Estos estilos son para los skills lenguajes*/
-.skills .col .contenedor-skills{
+.skills .col .contenedor-skills {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     justify-content: center;
 
 }
-.skills .col .contenedor-skills .skill{
+
+.skills .col .contenedor-skills .skill {
     border-radius: 100%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);/* desplazamiento x, desplazamiento y, desenfoque, color */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    /* desplazamiento x, desplazamiento y, desenfoque, color */
     width: 130px;
     height: 130px;
     margin: 0 15px 15px 0;
@@ -310,176 +357,279 @@ html{
     justify-content: center;
     transition: .3s;
 }
-.skills .col .contenedor-skills .skill:hover{
+
+.skills .col .contenedor-skills .skill:hover {
     background-color: #1CB698;
     animation: vibrate 0.3s ease-in-out;
 }
-.skills .col .contenedor-skills .skill i{
+
+.skills .col .contenedor-skills .skill i {
     font-size: 55px;
     padding: 8px;
 }
-.skills .col .contenedor-skills .skill h4{
+
+.skills .col .contenedor-skills .skill h4 {
     font-size: 12px;
 }
- /* Definir la animación de vibración */
- @keyframes vibrate {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-3px); }
-    50% { transform: translateX(3px); }
-    75% { transform: translateX(-3px); }
-    100% { transform: translateX(0); }
-  }
+
+/* Definir la animación de vibración */
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /*Estas clases se agregaran dinamicamente mendiante javascript*/
-.skills .skill .javascript{
+.skills .skill .javascript {
     width: 0%;
     animation: 2s javascript forwards;
 }
-@keyframes javascript{
-    0%{width: 0%;}
-    100%{width: 55%;}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
 }
-.skills .skill .htmlcss{
+
+.skills .skill .htmlcss {
     width: 0%;
     animation: 2s htmlcss forwards;
 }
-@keyframes htmlcss{
-    0%{width: 0%;}
-    100%{width: 75%;}
+
+@keyframes htmlcss {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
 }
-.skills .skill .java{
+
+.skills .skill .java {
     width: 0%;
     animation: 2s java forwards;
 }
-@keyframes java{
-    0%{width: 0%;}
-    100%{width: 80%;}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
 }
-.skills .skill .python{
+
+.skills .skill .python {
     width: 0%;
     animation: 2s python forwards;
 }
-@keyframes python{
-    0%{width: 0%;}
-    100%{width: 30%;}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
 }
-.skills .skill .sql{
+
+.skills .skill .sql {
     width: 0%;
     animation: 2s sql forwards;
 }
-@keyframes sql{
-    0%{width: 0%;}
-    100%{width: 70%;}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
-.skills .skill .comunicacion{
+
+.skills .skill .comunicacion {
     width: 0%;
     animation: 2s comunicacion forwards;
 }
-@keyframes comunicacion{
-    0%{width: 0%;}
-    100%{width: 100%;}
+
+@keyframes comunicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
-.skills .skill .creatividad{
+
+.skills .skill .creatividad {
     width: 0%;
     animation: 2s creatividad forwards;
 }
-@keyframes creatividad{
-    0%{width: 0%;}
-    100%{width: 100%;}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
-.skills .skill .trabajo{
+
+.skills .skill .trabajo {
     width: 0%;
     animation: 2s trabajo forwards;
 }
-@keyframes trabajo{
-    0%{width: 0%;}
-    100%{width: 100%;}
+
+@keyframes trabajo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
-.skills .skill .dedicacion{
+
+.skills .skill .dedicacion {
     width: 0%;
     animation: 2s dedicacion forwards;
 }
-@keyframes dedicacion{
-    0%{width: 0%;}
-    100%{width: 100%;}
+
+@keyframes dedicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
-.skills .skill .proyect{
+
+.skills .skill .proyect {
     width: 0%;
     animation: 2s proyect forwards;
 }
-@keyframes proyect{
-    0%{width: 0%;}
-    100%{width: 100%;}
+
+@keyframes proyect {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
+
 /*SECCION CURRICULUM*/
-.curriculum{
+.curriculum {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+
+.curriculum .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+
+.curriculum h2 {
     font-size: 48px;
-    font-family:'Righteous';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.curriculum .fila{
+
+.curriculum .fila {
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+
+.curriculum .fila .col {
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+
+.curriculum .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+
+.curriculum .fila .izquierda {
     border-right: 2px solid #252a2e;
 }
-.curriculum .fila .derecha{
+
+.curriculum .fila .derecha {
     border-left: 2px solid #252a2e;
 }
-.curriculum .fila .item{
+
+.curriculum .fila .item {
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252a2e;
     position: relative;
 }
-.curriculum .fila .item h4{
+
+.curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+
+.curriculum .fila .item .casa {
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+
+.curriculum .fila .item .fecha {
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+
+.curriculum .fila .item p {
     line-height: 24px;
     text-align: justify;
 }
-.curriculum .fila .izq{
+
+.curriculum .fila .izq {
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+
+.curriculum .fila .der {
     border-left: 2px solid #1CB698;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+
+.curriculum .fila .item .conectori {
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -488,7 +638,8 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+
+.curriculum .fila .item .conectori .circuloi {
     display: block;
     height: 10px;
     width: 10px;
@@ -498,7 +649,8 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+
+.curriculum .fila .item .conectord {
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -507,7 +659,8 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+
+.curriculum .fila .item .conectord .circulod {
     display: block;
     height: 10px;
     width: 10px;
@@ -518,26 +671,30 @@ html{
     bottom: 4px;
 }
 
-.curriculum .fila .herramientas{
+.curriculum .fila .herramientas {
     color: #1CB698;
 }
+
 /*SECCION PORTFOLIO/PROYECTOS*/
-.portfolio{
+.portfolio {
     background-color: #252a2e;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+
+.portfolio .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.portfolio h2{
+
+.portfolio h2 {
     font-size: 48px;
-    font-family:'Righteous';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{   
+
+.portfolio .galeria {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -549,40 +706,45 @@ html{
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-.portfolio .galeria .content{
+
+.portfolio .galeria .content {
     justify-items: center;
 }
-.portfolio .galeria .content p{
+
+.portfolio .galeria .content p {
     text-align: justify;
 }
 
-.portfolio .galeria .content .herramientas{
+.portfolio .galeria .content .herramientas {
     color: #1CB698;
 }
 
-.portfolio .galeria .content .botones-proyecto{
+.portfolio .galeria .content .botones-proyecto {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    width: 100%;
 }
 
-.portfolio .galeria .content .botones-proyecto button{
+.portfolio .galeria .content .botones-proyecto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
-    width: fit-content;
+    width: 100%;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     position: relative;
     z-index: 10;
 }
-.portfolio .galeria .content .botones-proyecto button a{ /*Esto lo agregue para estilar el link dentro del boton para que me permita visualizar el cv*/
+
+.portfolio .galeria .content .botones-proyecto button a {
     color: #fff;
     text-decoration: none;
 }
-.portfolio .galeria .content .botones-proyecto button .overlay{
+
+.portfolio .galeria .content .botones-proyecto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -592,35 +754,39 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.portfolio .galeria .content .botones-proyecto button:hover .overlay{
+
+.portfolio .galeria .content .botones-proyecto button:hover .overlay {
     width: 100%;
 }
 
 
-.portfolio .galeria a{
+.portfolio .galeria a {
     color: #fff;
 }
-.portfolio .galeria .proyecto{
+
+.portfolio .galeria .proyecto {
     position: relative;
-    /*max-width: 340px;*/   
+    /*max-width: 340px;*/
     height: fit-content;
     width: 340px;
-    
+
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+
+.portfolio .galeria .proyecto img {
     width: 100%;
     display: block;
     height: 200px;
 }
-.portfolio .galeria .proyecto .overlay{
+
+.portfolio .galeria .proyecto .overlay {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -629,22 +795,26 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
-     margin-bottom: 20px;
-     transition: 1s;
-     /*Este tamaño lo agregue para no ocupar mucho espacio de la imagen*/
-     font-size: 1rem;
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+    /*Este tamaño lo agregue para no ocupar mucho espacio de la imagen*/
+    font-size: 1rem;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+
+.portfolio .galeria .proyecto .overlay:hover {
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
     margin-bottom: 0px;
 }
 
 /*Modal para el video*/
-.portfolio .galeria .modal{
-    display: none; /* Oculto por defecto */
+.portfolio .galeria .modal {
+    display: none;
+    /* Oculto por defecto */
     position: fixed;
     z-index: 999;
     left: 0;
@@ -652,13 +822,15 @@ html{
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8); /* fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* fondo oscuro */
 
-    
+
     justify-content: center;
     align-items: center;
 }
-.portfolio .galeria .modal .modal-contenido{
+
+.portfolio .galeria .modal .modal-contenido {
     position: relative;
     background-color: #000;
     padding: 0;
@@ -667,7 +839,8 @@ html{
     max-width: 90vw;
     max-height: 90vh;
 }
-.portfolio .galeria .modal .modal-contenido .cerrar{
+
+.portfolio .galeria .modal .modal-contenido .cerrar {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -677,12 +850,15 @@ html{
     cursor: pointer;
     z-index: 1000;
 }
-.portfolio .galeria .modal .modal-contenido .cerrar:hover{
+
+.portfolio .galeria .modal .modal-contenido .cerrar:hover {
     color: black;
 }
-.portfolio .galeria .modal .modal-contenido .video-wrapper{
+
+.portfolio .galeria .modal .modal-contenido .video-wrapper {
     width: 80vw;
-    height: 65vw; /* Relación 16:9 */
+    height: 65vw;
+    /* Relación 16:9 */
     max-width: 990px;
     max-height: 650px;
 }
@@ -692,33 +868,122 @@ html{
     height: 100%;
     border: none;
     border-radius: 10px;
-  }
+}
+
+/*Modal de comando*/
+.portfolio .galeria .modal .modal-contenido .modal-header {
+    background: linear-gradient(135deg, #1CB698 0%, #0e8a73 100%);
+    padding: 20px 25px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.code-container {
+    position: relative;
+    background: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-header {
+    background: #1a1a1a;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #404040;
+}
+
+.code-title {
+    color: #888;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace;
+}
+
+.copy-button {
+    background: #1CB698;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.copy-button.copied {
+    background: #2196F3;
+}
+
+.code-content {
+    padding: 20px;
+    overflow-x: auto;
+    max-height: 500px;
+}
+
+.code-content pre {
+    margin: 0;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
 /*SECCION CONTACTO*/
-.contacto{
+.contacto {
     /*background-image: ;*/
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
 }
-.contacto .contenido-seccion{
+
+.contacto .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.contacto h2{
+
+.contacto h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+
+.contacto .fila {
     display: flex;
 }
-.contacto .col{
+
+.contacto .col {
     width: 50%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+
+.contacto .col input,
+.contacto .col textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -728,7 +993,8 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -741,7 +1007,8 @@ html{
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -751,13 +1018,16 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+
+.contacto button:hover .overlay {
     width: 100%;
 }
-.contacto .col img{
+
+.contacto .col img {
     width: 100%;
 }
-.contacto .col .info{
+
+.contacto .col .info {
     position: absolute;
     top: 45%;
     background-color: #252a2e;
@@ -766,23 +1036,26 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     /*Esto es extra para alinear de acuerdo al contenido*/
-    width: 340px;  
+    width: 340px;
 }
-.contacto .col .info ul{
+
+.contacto .col .info ul {
     list-style: none;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
-.contacto .col .info ul li{
-    margin-bottom: 20px; 
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
+
+.contacto .col .info ul li i {
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
 }
 
 /*FOOTER*/
-footer{
+footer {
     background-color: #252a2e;
     color: #fff;
     padding: 50px 0 30px 0;
@@ -790,10 +1063,12 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes a{
+
+footer .redes a {
     margin-bottom: 20px;
 }
-footer .redes a{
+
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -806,12 +1081,13 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
-footer .arriba{
+
+footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
     background-color: #1CB698;
-    color:  #fff;
+    color: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -820,15 +1096,18 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
 /*SECCION RESPONSIVE*/
 @media screen and (max-width:980px) {
     nav {
         display: none;
     }
-    .nav-responsive{
+
+    .nav-responsive {
         display: block;
     }
-    nav.responsive{
+
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
@@ -836,220 +1115,264 @@ footer .arriba{
         background-color: #252a2e;
         width: 180px;
     }
-    nav.responsive ul{
-        display: block !important;   
+
+    nav.responsive ul {
+        display: block !important;
     }
-    nav.responsive ul li{
+
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-    .portfolio .galeria .content{
+
+    .portfolio .galeria .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria a{
+
+    .portfolio .galeria a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria .botones-proyecto{
+
+    .portfolio .galeria .botones-proyecto {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 5px;
     }
-} 
-@media screen and (max-width:700px){
-    .sobremi .fila{
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
         display: block;
     }
-    .sobremi .fila .col{
+
+    .sobremi .fila .col {
         width: fit-content;
     }
-    .skills .fila{
+
+    .skills .fila {
         display: block;
     }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
-        width: 90%;
-    }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
-    }
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
+
+    .skills .fila .col {
         width: 100%;
     }
 
-    .portfolio .galeria .content{
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+    .portfolio .galeria .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria a{
+
+    .portfolio .galeria a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria .botones-proyecto{
+
+    .portfolio .galeria .botones-proyecto {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 5px;
     }
 }
-@media screen and (max-width:430px){
-    .inicio{
-       height: 100%;
-       margin-top: 17%;
-       padding: 10%
+
+@media screen and (max-width:430px) {
+    .inicio {
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
     }
-    .inicio .contenido-banner{
+
+    .inicio .contenido-banner {
         max-width: 325px;
     }
-    .sobremi .fila .col .contenedor-intereses{
+
+    .sobremi .fila .col .contenedor-intereses {
         display: flex;
         justify-content: center;
-        }
-
-        .portfolio .galeria .content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria a{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria .botones-proyecto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5px;
-        }
-}
-@media screen and (max-width:360px){
-    .inicio{
-        height: 100%;
-        margin-top: 17%;
-        padding: 10%
-     }
-    .inicio .contenido-banner{
-        max-width: 300px;
     }
-    .sobremi .fila .col .contenedor-intereses{
-        display: flex;
-        justify-content: center;
-        }  
 
-        .portfolio .galeria .content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria a{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria .botones-proyecto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5px;
-        }
-}
-@media screen and (max-width:390px){
-    .inicio{
-        height: 100%;
-        margin-top: 17%;
-        padding: 10%
-     }
-    .inicio .contenido-banner{
-        max-width: 300px;
-    } 
-    .sobremi .fila .col .contenedor-intereses{
-        display: flex;
-        justify-content: center;
-        }
-
-        .portfolio .galeria .content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria a{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio .galeria .botones-proyecto{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5px;
-        }
-}
-@media screen and (max-width:375px){
-    .inicio{
-        height: 100%;
-        margin-top: 17%;
-        padding: 10%
-     }
-    .inicio .contenido-banner{
-        max-width: 300px;
-    } 
-    .sobremi .fila .col .contenedor-intereses{
-        display: flex;
-        justify-content: center;
-        }
-
-    .portfolio .galeria .content{
+    .portfolio .galeria .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria a{
+
+    .portfolio .galeria a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .portfolio .galeria .botones-proyecto{
+
+    .portfolio .galeria .botones-proyecto {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .inicio {
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+    }
+
+    .inicio .contenido-banner {
+        max-width: 300px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .portfolio .galeria a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .botones-proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .inicio {
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+    }
+
+    .inicio .contenido-banner {
+        max-width: 300px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .galeria a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .botones-proyecto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .inicio {
+        height: 100%;
+        margin-top: 17%;
+        padding: 10%
+    }
+
+    .inicio .contenido-banner {
+        max-width: 300px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .galeria a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .galeria .botones-proyecto {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 5px;
