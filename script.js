@@ -88,6 +88,9 @@ form.addEventListener('submit', function (event) {
 
 //Esto es para mostrar los videos de la seccion de proyectos
 function abrirModalvideo(el) {
+    // 🔥 NUEVO: Agregar clase al body para desactivar hovers
+    document.body.classList.add('modal-activo');
+
     const videoUrl = el.getAttribute("data-video");
     const iframe = document.getElementById("youtubeVideo");
     iframe.src = videoUrl;
@@ -99,6 +102,9 @@ function abrirModalvideo(el) {
     const iframe = document.getElementById("youtubeVideo");
     modal.style.display = "none";
     iframe.src = ""; // Detiene el video
+
+    // 🔥 NUEVO: Remover clase del body
+    document.body.classList.remove('modal-activo');
   }
   // Cerrar los modales al hacer clic fuera del contenido
   window.onclick = function(event) {
@@ -116,9 +122,14 @@ function abrirModalvideo(el) {
 
   //Esto es para mostrar un modal con instrucciones de instalacion
   function abrirModalDocker(){
+    // 🔥 NUEVO: Agregar clase al body
+    document.body.classList.add('modal-activo');
+    
     const modalDocker = document.getElementById("modalDocker");
     modalDocker.style.display = "flex";
     document.body.style.overflow = "hidden";
+
+    
     
   }
 
@@ -132,6 +143,9 @@ function abrirModalvideo(el) {
     const copyComand = document.getElementById("copyComand");
     copyButton.classList.remove("copied");
     copyComand.textContent ="Copiar";
+
+     // 🔥 NUEVO: Remover clase del body
+    document.body.classList.remove('modal-activo');
   }
 
   function copiarComando(){

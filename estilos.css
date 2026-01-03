@@ -980,6 +980,65 @@ html {
     font-size: 14px;
     line-height: 1.6;
 }
+/* ========================================
+   FIX PARA HOVER EN MODALES - VERSIÓN OPTIMIZADA
+   ======================================== */
+
+/* Prevenir scroll cuando el modal está activo */
+body.modal-activo {
+    overflow: hidden !important;
+}
+
+/* Desactivar TODAS las interacciones en la sección portfolio */
+body.modal-activo .portfolio {
+    pointer-events: none !important;
+}
+
+/* Los modales SIEMPRE deben estar por encima de todo */
+.portfolio .galeria .modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999 !important;
+    pointer-events: none !important;
+}
+
+/* Cuando el modal se muestra, activar interacciones */
+.portfolio .galeria .modal[style*="display: flex"],
+.portfolio .galeria .modal[style*="display:flex"] {
+    pointer-events: auto !important;
+}
+
+/* Todo el contenido del modal debe ser interactivo */
+.portfolio .galeria .modal * {
+    pointer-events: auto !important;
+}
+
+/* Asegurar que el modal docker también funcione */
+#modalDocker {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999 !important;
+}
+
+/* Prevenir que los hovers de galería se activen cuando hay modal activo */
+body.modal-activo .portfolio .galeria:hover {
+    transform: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.modal-activo .portfolio .galeria .proyecto:hover {
+    transform: none !important;
+}
+
+body.modal-activo .portfolio .galeria .proyecto .overlay {
+    opacity: 0 !important;
+}
 
 
 /*SECCION CONTACTO*/
