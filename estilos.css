@@ -91,6 +91,14 @@ html {
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    transition: 0.5s;
+}
+
+.inicio .contenido-banner:hover{
+    /*box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 0 12px 40px rgba(28, 182, 152, 0.6);
+    transition: 0.5s;
+    transform: scale(1.02);
 }
 
 .inicio .contenido-banner img {
@@ -705,6 +713,13 @@ html {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.portfolio .galeria:hover{
+    /*box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 0 12px 40px rgba(28, 182, 152, 0.6);
+    transition: 0.5s;
+    transform: scale(1.02);
 }
 
 .portfolio .galeria .content {
